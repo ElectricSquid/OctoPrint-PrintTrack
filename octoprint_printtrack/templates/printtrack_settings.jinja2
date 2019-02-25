@@ -1,0 +1,120 @@
+<form class="form-horizontal">
+    <fieldset>
+        <legend>Title Options</legend>
+        <div class="control-group">
+            <div class="controls">
+                <label class="checkbox"><input type="checkbox" data-bind="checked: settings.plugins.printtrack.titleAppend">Append OctoPrint Title<span class="help-block">The title will be whatever you have set in the OctoPrint Appearance setting. If you change the Appearances Title setting while this is enabled it will require a page refresh to take effect. Example: <code>Offline - OctoPrint</code></span></label>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <label class="checkbox"><input type="checkbox" data-bind="checked: settings.plugins.printtrack.titlePrepend">Prepend OctoPrint Title<span class="help-block">The title will be whatever you have set in the OctoPrint Appearance setting. If you change the Appearances Title setting
+                while this is enabled it will require a page refresh to take effect. Example: <code>OctoPrint - Offline</code></span></label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Prepend/Append Seperator</label>
+            <div class="controls">
+                <input type="text" class="input-block-level" data-bind="value: settings.plugins.printtrack.statusSeperator"><span class="help-block">This is the text that will be placed between the title and printers status. A space will be inserted on both sides for spacing.</span>
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="advanced_options">
+        <div>
+            <small>
+                <a href="#" class="muted" data-bind="toggleContent: { class: 'fa-caret-right fa-caret-down', parent: '.advanced_options', container: '.hide' }"><i class="fa fa-caret-right"></i>Advanced Options</a>
+            </small>
+        </div>
+        <div class="hide">
+            <fieldset>
+            <legend>Custom Title Statuses</legend>
+            <div class="control-group">
+                <label class="control-label">Offline</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.printtrack.statusOffline">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Connecting</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level"
+                            data-bind="value: settings.plugins.printtrack.statusConnecting">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Operational</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level"
+                            data-bind="value: settings.plugins.printtrack.statusOperational">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Printing</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level"
+                            data-bind="value: settings.plugins.printtrack.statusPrinting">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Paused</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level"
+                            data-bind="value: settings.plugins.printtrack.statusPaused">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Closed</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level"
+                            data-bind="value: settings.plugins.printtrack.statusClosed">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Error</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level"
+                            data-bind="value: settings.plugins.printtrack.statusError">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Closed With Error</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level"
+                            data-bind="value: settings.plugins.printtrack.statusClosedWithError">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Cancelling</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.printtrack.statusCancelling">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Pausing</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.printtrack.statusPausing">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Resuming</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.printtrack.statusResuming">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Finishing</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.printtrack.statusFinishing">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Other</label>
+                <div class="controls">
+                    <input type="text" class="input-block-level" data-bind="value: settings.plugins.printtrack.statusOther">
+                </div>
+            </div>
+            </fieldset>
+        </div>
+    </div>
+</form>

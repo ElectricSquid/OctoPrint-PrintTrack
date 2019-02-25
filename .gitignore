@@ -1,0 +1,6 @@
+*.pyc
+*.egg*
+*.zip
+build
+dist
+*.code-workspace
