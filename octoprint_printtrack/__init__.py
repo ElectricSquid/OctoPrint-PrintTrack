@@ -1,5 +1,5 @@
-# coding=utf-8
-from __future__ import absolute_import
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, division, print_function, unicode_literals
 import octoprint.plugin
 
 
@@ -56,6 +56,9 @@ class PrintTrackPlugin(octoprint.plugin.EventHandlerPlugin, octoprint.plugin.Set
 
 __plugin_name__ = "Print Track"
 __plugin_implementation__ = PrintTrackPlugin()
+
+# Setting up compatibility for both python2 and python3
+__plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
 	global __plugin_implementation__
